@@ -1,0 +1,12 @@
+
+.btn-dark {
+    border:1px solid white !important;
+}
+span{
+    background-color: blue;
+}
+@media (max-width:700px){
+    .text-white th{
+        font-size: 10px;
+    }
+}
