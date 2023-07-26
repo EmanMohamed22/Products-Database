@@ -17,12 +17,17 @@ function addProduct() {
   category : productCategory.value,
   desc : productDesc.value
  }
- if (document.getElementById("up").innerHTML == "Add Product") {
-  products.push(product);
- }else{
-   products.splice(mainIndex,1,product)
-  
+ if (productName.value&& productPrice.value && productCategory.value &&productDesc.value) {
+  if (document.getElementById("up").innerHTML == "Add Product") {
+    products.push(product);
+   }else{
+     products.splice(mainIndex,1,product)
+    
+   }
+ } else {
+   alert('Please fill all fields')
  }
+ 
  
  
  localStorage.setItem("products",JSON.stringify(products))
